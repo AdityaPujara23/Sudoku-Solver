@@ -18,12 +18,12 @@ to:
 ,[".",".",".","4","1","9",".",".","5"]
 ,[".",".",".",".","8",".",".","7","9"]]``
 
-* Clone this repository using
+* Clone this repository using:
 ``git clone https://github.com/AdityaPujara23/Sudoku-Solver.git``
 
 * Change your directory in the terminal to the downloaded repo
 
-* Run the following command to validate and solve the sudoku
+* Run the following command to validate and solve the sudoku:
 ```python3 valandsolve.py```
 
 ### Note this requires python3 to be installed properly
