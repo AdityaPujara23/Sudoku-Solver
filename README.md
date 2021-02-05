@@ -26,17 +26,17 @@ to:
 * Change your directory in the terminal to the downloaded repo
 
 * Copy your converted Sudoku to the following file:
-``valandsolve.py``
+``sudoku.json``
 
 where it states:
-``sudoku = [["5","3",".",".","7",".",".",".","."] ,["6",".",".","1","9","5",".",".","."] ,[".","9","8",".",".",".",".","6","."] ,["8",".",".",".","6",".",".",".","3"] ,["4",".",".","8",".","3",".",".","1"] ,["7",".",".",".","2",".",".",".","6"] ,[".","6",".",".",".",".","2","8","."] ,[".",".",".","4","1","9",".",".","5"] ,[".",".",".",".","8",".",".","7","9"]]``
+``"sudoku" = [["5","3",".",".","7",".",".",".","."] ,["6",".",".","1","9","5",".",".","."] ,[".","9","8",".",".",".",".","6","."] ,["8",".",".",".","6",".",".",".","3"] ,["4",".",".","8",".","3",".",".","1"] ,["7",".",".",".","2",".",".",".","6"] ,[".","6",".",".",".",".","2","8","."] ,[".",".",".","4","1","9",".",".","5"] ,[".",".",".",".","8",".",".","7","9"]]``
 
 change this to:
-``sudoku = //your converted sudoku//``
+``"sudoku" = //your converted sudoku//``
 
 where ``//your converted sudoku`` is the sudoku you wish to solve!
 
 ## Watch the magic take place!
-* Run the following command to validate and solve the sudoku:
+* Run the following command in your terminal to validate and solve the sudoku:
 ```python3 valandsolve.py```
 * If your Sudoku is valid, it will present the solution on the screen!
