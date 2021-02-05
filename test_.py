@@ -24,4 +24,5 @@ def main():
         return
         
 def test_main():
-  assert 'Sudoku valid. Solved:' in main()
+  res = main()
+  assert 'Sudoku valid. Solved:' in res
