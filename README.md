@@ -34,7 +34,7 @@ where it states:
 change this to:
 ``"sudoku" = //your converted sudoku//``
 
-where ``//your converted sudoku`` is the sudoku you wish to solve!
+where ``//your converted sudoku//`` is the sudoku you wish to solve!
 
 ## Watch the magic take place!
 * Run the following command in your terminal to validate and solve the sudoku:
