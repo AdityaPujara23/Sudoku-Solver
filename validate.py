@@ -20,7 +20,7 @@ class Validate:
             return False
         return True
     
-    def isValidSudoku(self, board: List[List[str]]) -> bool:
+    def __init__(self, board: List[List[str]]) -> bool:
         #check rows
         for row in board:
             if self.check_rep(row) == False:
