@@ -1,5 +1,3 @@
-[![Build Actions Status](https://github.com/AdityaPujara23/Sudoku-Solver/workflows/Python application/badge.svg)]
-
 # Sudoku-Solver
 Algorithms which validate a 9x9 Sudoku Puzzle and solve it. Developed in Python3.
 
