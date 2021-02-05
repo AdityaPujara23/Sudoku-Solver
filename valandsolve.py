@@ -1,9 +1,16 @@
 import validate
 import solve
+import json
+import os
 
 def main():
-    #example sudoku (to change this to another sudoku, copy your list of lists sudoku here by replacing the existing list of lists)
-    sudoku = [["5","3",".",".","7",".",".",".","."] ,["6",".",".","1","9","5",".",".","."] ,[".","9","8",".",".",".",".","6","."] ,["8",".",".",".","6",".",".",".","3"] ,["4",".",".","8",".","3",".",".","1"] ,["7",".",".",".","2",".",".",".","6"] ,[".","6",".",".",".",".","2","8","."] ,[".",".",".","4","1","9",".",".","5"] ,[".",".",".",".","8",".",".","7","9"]]
+    #fetching the sudoku
+    path = os.path.abspath("sudoku.json")
+
+    with open(path) as data_:
+        data = json.load(data_)
+
+    sudoku = data['sudoku']
 
     # validate the sudoku
     validation = (validate.run(sudoku)).Validate()
