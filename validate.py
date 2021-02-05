@@ -1,7 +1,10 @@
 from collections import Counter
 import numpy as np
 
-class Validate:
+class run:
+    def __init__(self,board):
+	    self.board = board
+	
     def check_rep(self,row):
         data = (Counter(row)).most_common()
         most_com = ''
@@ -20,14 +23,14 @@ class Validate:
             return False
         return True
     
-    def __init__(self, board: List[List[str]]) -> bool:
+    def Validate(self) -> bool:
         #check rows
-        for row in board:
+        for row in self.board:
             if self.check_rep(row) == False:
                 return False
             
         #check cols
-        ar = np.array(board)
+        ar = np.array(self.board)
         temp = np.rot90(ar)
         for cols in temp:
             if self.check_rep(cols) == False:
@@ -54,3 +57,4 @@ class Validate:
             col_upto += 3
         
         return True
+
